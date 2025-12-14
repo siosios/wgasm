@@ -4,7 +4,7 @@
 #	Script to update OS (Debian) packages required for these scripts
 #	============================================================================
 #	Created:       2024-05-31, by Weasel.SteamID.155@gMail.com
-#	Last modified: 2025-01-20, by Weasel.SteamID.155@gMail.com
+#	Last modified: 2025-12-13, by Weasel.SteamID.155@gMail.com
 #	----------------------------------------------------------------------------
 #	__        ___    ____  _   _ ___ _   _  ____
 #	\ \      / / \  |  _ \| \ | |_ _| \ | |/ ___|_
@@ -218,7 +218,7 @@ sudo apt-get install -y gawk git grep tree wget curl git htop screen net-tools b
 #
 #	Required for ANSI-color processsing (and removal):
 #
-sudo apt-get install -y olorized-logs;
+sudo apt-get install -y colorized-logs;
 #
 #	Testing that various required commands/utilities work now ...
 #
