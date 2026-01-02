@@ -4,7 +4,7 @@
 #	Script to update OS (Debian) packages required for these scripts
 #	============================================================================
 #	Created:       2024-05-31, by Weasel.SteamID.155@gMail.com
-#	Last modified: 2025-12-13, by Weasel.SteamID.155@gMail.com
+#	Last modified: 2026-01-01, by Weasel.SteamID.155@gMail.com
 #	----------------------------------------------------------------------------
 #	__        ___    ____  _   _ ___ _   _  ____
 #	\ \      / / \  |  _ \| \ | |_ _| \ | |/ ___|_
@@ -204,7 +204,7 @@ sudo apt-get install -y openssh-server coreutils sudo nano;
 #	Required if using Webmin:
 #
 echo -e "\n${ANSI_BLUELT}INSTALLING:${ANSI_WHITE} Required or recommended if using Webmin${ANSI_OFF} ..";
-sudo apt-get install -y ntp sntp ntpdate apt-transport-https dialog xmlstarlet iptables;
+sudo apt-get install -y ntpsec-ntpdate apt-transport-https dialog xmlstarlet iptables;
 #
 #	Required for SteamCMD and/or game-servers:
 #
