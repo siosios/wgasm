@@ -4,7 +4,7 @@
 #	Script to update OS (Debian) packages required for these scripts
 #	============================================================================
 #	Created:       2024-05-31, by Weasel.SteamID.155@gMail.com
-#	Last modified: 2026-01-01, by Weasel.SteamID.155@gMail.com
+#	Last modified: 2026-02-17, by Weasel.SteamID.155@gMail.com
 #	----------------------------------------------------------------------------
 #	__        ___    ____  _   _ ___ _   _  ____
 #	\ \      / / \  |  _ \| \ | |_ _| \ | |/ ___|_
@@ -788,7 +788,17 @@ if [ $WEBMIN_CHECK == true -a $TEST_USER_EXISTS == true ]; then
 				echo -e "/wgasm/include" >> $FILEMIN_BOOKMARKS_FILE;
 				echo -e "/wgasm/webmin" >> $FILEMIN_BOOKMARKS_FILE;
 				chown -R game-servers:game-servers $FILEMIN_BOOKMARKS_FOLDER 2> /dev/null > /dev/null;
-				chown game-servers:game-servers $FILEMIN_BOOKMARKS_FILE 2> /dev/null > /dev/null;
+				chown game-servers:game-servers $FILEMIN_BOOKMARKS_FILE 2> /dev/null > /dev/null;	
+				#
+				#	Create webmin/custom/prefs.game-servers file ...
+				#
+				#		sort=desc
+				#		display_mode=1
+				#
+				WEBMIN_CUSTOM_FILE="$WEBMIN_FOLDER/custom/prefs.game-servers";
+				echo -e "sort=desc" > $WEBMIN_CUSTOM_FILE;
+				echo -e "display_mode=1" > $WEBMIN_CUSTOM_FILE;
+				chown game-servers:game-servers $WEBMIN_CUSTOM_FILE 2> /dev/null > /dev/null;
 				#
 				#	Check for any errors thrown ...
 				#
