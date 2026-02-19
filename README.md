@@ -8,26 +8,26 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3259278773
 
 ### 1. Download this repo
 ```shell
-git clone https://github.com/Mecha-Weasel/wgasm
+git clone https://github.com/Mecha-Weasel/wgasm;
 ```
 Don't have `git` ?
 ```shell
-sudo apt-get update && sudo apt-get install git -y
+sudo apt-get update && sudo apt-get install git -y;
 ```
 
 ### 2. Run the preparation script
 
 ```shell
-cd wgasm
-chmod +x prepare-debian.sh
-sudo ./prepare-debian.sh --nike
+cd wgasm;
+chmod +x prepare-debian.sh;
+sudo ./prepare-debian.sh --nike;
 ```
 
 ### 3. Installation of WGASM
 
 ```shell
-chmod +x install-wgasm.sh
-sudo su -c "./install-wgasm.sh --nike" game-servers
+chmod +x install-wgasm.sh;
+sudo su -c "./install-wgasm.sh --nike" game-servers;
 ```
 
 # Conclusion
